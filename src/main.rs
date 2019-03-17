@@ -83,8 +83,31 @@ fn main() {
             '7' => hex += "37 ",
             '8' => hex += "38 ",
             '9' => hex += "39 ",
-            _ => {}
+            _ => hex.push(letter),
         }
     });
     println!("{}", hex);
+    let mut binary = String::with_capacity(hex.len() * 3);
+    hex.chars().for_each(|letter| {
+        match letter {
+            '0' => binary += "0000",
+            '1' => binary += "0001",
+            '2' => binary += "0010",
+            '3' => binary += "0011",
+            '4' => binary += "0100",
+            '5' => binary += "0101",
+            '6' => binary += "0110",
+            '7' => binary += "0111",
+            '8' => binary += "1000",
+            '9' => binary += "1001",
+            'A' => binary += "1010",
+            'B' => binary += "1011",
+            'C' => binary += "1100",
+            'D' => binary += "1101",
+            'E' => binary += "1110",
+            'F' => binary += "1111",
+            _ => binary.push(letter),
+        }
+    });
+    println!("{}", binary);
 }
