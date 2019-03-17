@@ -86,7 +86,7 @@ fn main() {
             _ => hex.push(letter),
         }
     });
-    println!("{}", hex);
+    print!("{}", hex);
     let mut binary = String::with_capacity(hex.len() * 3);
     hex.chars().for_each(|letter| {
         match letter {
@@ -109,5 +109,5 @@ fn main() {
             _ => binary.push(letter),
         }
     });
-    println!("{}", binary);
+    print!("{}", binary);
 }
