@@ -1,5 +1,5 @@
 [package]
-name = "untitled"
+name = "encoder"
 version = "0.1.0"
 authors = ["Kirill Kamakin <k.kamakin@protonmail.ch>"]
 edition = "2018"
